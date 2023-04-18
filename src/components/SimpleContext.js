@@ -10,8 +10,8 @@ export const SimpleProvider = ({ children }) => {
 
   // fetch GET /get-books to get all books IDs
   useEffect(() => {
-    fetch("/api/route-1")
-      //fetch("/.netlify/functions/handlers")
+    //fetch("/api/route-1")
+    fetch("/.netlify/functions/handlers")
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
